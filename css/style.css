@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* global styles */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-color: #222;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    height: 100%;
+    scroll-behavior: smooth;
+    color: var(--main-font-color);
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* re-usable classes */
+
+.btn {
+    font-size: 1.8rem;
+    transition: 650ms;
+    text-transform: uppercase;
+
+}
+
+.btn-outline-secondary {
+    border: 1px solid #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #563d7c;
+}
+
+/*-- Navigation */
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    padding: .6rem;
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: 1px solid #563d7c !important;
+}
+
+.navbar-nav li {
+    padding-right: 2rem;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #222 !important;
+}
+
+
+/*--- Image Slider */
+#headerSlider {
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+
+.carousel-caption h3 {
+    font-size: 6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1rem #000;
+
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 1rem #000;
+    padding-bottom: 1rem;
+
+}
+
+.btn-primary {
+    background-color: #664bb1;
+    border: 1px solid #563d7c;
+}
+
+.btn-primary:hover {
+    background-color: #563d7c;
+    border: 1px solid #563d7c;
+}
+
+
+/*--- Jumbotron */
+.jumbotron {
+    padding: 6rem 0;
+    border: 0;
+}
+
+
+.jumbotron .btn-outline-secondary {
+    border: 1px solid #563d7c;
+    color: #222 !important;
+}
+
+.jumbotron .btn-outline-secondary:hover {
+    color: #fff !important;
+}
+
+
+/*--- Welcome Section */
+.container h2 {
+    font-size: 4.5rem;
+    font-weight: 100;
+    color: #222;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.container hr {
+    border-top: 2px solid #563d7c;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+#built-with-ease p {
+    padding-bottom: 3rem;
+}
+
+.fa-code {
+    color: #e54d26;
+}
+
+.fa-bold {
+    color: #563d7c;
+}
+
+.fa-css3 {
+    color: #2163af;
+}
+
+
+.fa-code, .fa-bold, .fa-css3 {
+    font-size: 6.4rem;
+    margin: 1rem;
+
+}
+
+#built-with-ease h3 {
+    font-size: 2.75rem !important;
+    padding: 1rem 0;
+}
+
+
+/*--- about */
+#about {
+    padding: 6rem 0;
+}
+
+#about h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.about-two p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#about .btn-outline-secondary {
+    border: 1px solid #563d7c;
+    color: #222 !important;
+    margin: 2rem 1rem 0 0;
+}
+
+#about .btn-outline-secondary:hover {
+    color: #fff !important;
+}
+
+.about-two img {
+    width: 100%;
+    max-height: 40rem;
+    padding-left: 3rem;
+}
+
+
+/*--- Fixed background */
+#services {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url(../img/mac.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 7rem;
+    color: #b4b4b4;
+}
+
+#services .btn-outline-secondary {
+    margin: 2rem 0;
+}
+
+#services .row {
+    padding-bottom: 3rem;
+}
+
+#services h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+#services img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 2rem;
+}
+
+#services .row h3 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 1rem;
+
+}
+#services .row p {
+    font-size: 1.6rem;
+    color: #b4b4b4;
+    
+}
+
+
+#services hr {
+    border-top: 2px solid #b4b4b4;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+  
+/*--- Meet the team */
+#our-team {
+    color: #222;
+}
+
+#our-team h1 {
+    text-align: center;
+}
+
+.profile {
+    margin: 2rem;
+}
+
+.profile img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    margin-bottom: 3rem;
+    filter: grayscale(1);
+
+}
+
+.profile:hover img {
+    filter: grayscale(0);
+    transition: all 650ms;
+}
+
+.profile h3 {
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.profile p {
+    padding-bottom: 1rem;
+    font-size: 1.4rem !important;
+}
+
+.social {
+    
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
+
+.social li a {
+    color: #fff !important;
+    width: 3rem;
+    height: 3rem;
+    padding: 1.3rem;
+    border-radius: 50%;
+    background: #563d7c;
+
+}
+
+/*--- Connect */
+#connect {
+    padding-bottom: 6rem;
+}
+
+#connect a {
+    color: #563d7c !important;
+    font-size: 5rem;
+    padding: 0 3rem;
+}
+
+.col-12 a:hover .fa-twitter{
+    color: #007bff !important;
+    transition: all 650ms;
+}
+
+.col-12 a:hover .fa-facebook{
+    color: #3b5998 !important;
+    transition: all 650ms;
+}
+
+.col-12 a:hover .fa-linkedin-in{
+    color: #3b5998 !important;
+    transition: all 650ms;
+}
+
+.col-12 a:hover .fa-instagram{
+    color: #517fa4 !important;
+    transition: all 650ms;
+}
+
+.col-12 a:hover .fa-youtube{
+    color: #bb0000 !important;
+    transition: all 650ms;
+}
+
+
+/*--- Footer */
+footer {
+    background-color: #563d7c;
+    color: #b4b4b4;
+}
+
+footer .row {
+    padding-top: 4rem !important;
+}
+
+footer .col-md-4 hr {
+    border-top: 2px solid #b4b4b4 !important;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer h5 {
+    font-size: 1.97rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -2rem;
+}
+
+footer p {
+    color: #b4b4b4 !important;
+}
+
+footer .col-12 hr {
+    border-top: 2px solid #b4b4b4 !important;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
