@@ -59,7 +59,7 @@ p {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .navbar {
@@ -313,6 +313,7 @@ p {
 .profile:hover img {
     filter: grayscale(0);
     transition: all 650ms;
+    cursor: pointer;
 }
 
 .profile h3 {
@@ -424,12 +425,121 @@ footer .col-12 hr {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+    #connect a {
+        font-size: 4rem;
+        padding: 0 2rem;
+    }
 
-  }
+    .btn {
+        font-size: 1.7rem;
+    }
+}
 @media (max-width: 768px) {
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: initial;
+    }
+    
+    
+    .carousel-caption h3 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1rem #000;
+    
+    }
+    
+    .carousel-caption h5 {
+        font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 1rem #000;
+        padding-bottom: .5rem;
+    
+    }
+
+    .btn {
+        font-size: 1.55rem;
+    }
+
+    h2 {
+        font-size: 3.5rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .container hr, #services hr {
+        width: 12rem !important;
+    }
+
+    footer .col-md-4 hr {
+        width: 50% !important;
+    }
+
+    footer .col-12 hr {
+        width: initial !important;
+    }
+
   
 }
 @media (max-width: 576px) {
+    .navbar-brand img {
+        height: 4rem;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: initial;
+        padding-top: 7rem;
+    }
+    
+    
+    .carousel-caption h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 1rem #000;
+        padding-bottom: .5rem;
+    
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .btn {
+        font-size: 1.35rem;
+    }
+
+    h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: .6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .container hr, #services hr {
+        width: 10rem !important;
+    }
+
+    #connect a {
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+
+    footer .col-12 hr {
+        width: initial !important;
+    }
+
+
   
 }
 
@@ -442,7 +552,6 @@ footer .col-12 hr {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
-/*--- Fixed Background Image --*/
 
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
